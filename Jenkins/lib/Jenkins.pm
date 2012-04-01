@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Jenkins - [One line description of module's purpose here]
+Jenkins remote API access through its REST interface  
 
 
 =head1 VERSION
