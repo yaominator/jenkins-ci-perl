@@ -4,19 +4,13 @@ use warnings;
 use strict;
 use Carp;
 
-use version; $VERSION = qv('0.0.3');
+use version; our $VERSION = qv('0.0.3');
 use Moose;
-
-# Other recommended modules (uncomment to use):
-#  use IO::Prompt;
-#  use Perl6::Export;
-#  use Perl6::Slurp;
-#  use Perl6::Say;
-
 
 # Module implementation here
 
-has 'uri' => ( isa => 'Str', is => 'rw' );
+has 'uri' => ( isa => 'Str', is => 'rw' ); # Jenkins uri 
+
 
 1; # Magic true value required at end of module
 __END__
