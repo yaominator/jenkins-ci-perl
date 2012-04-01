@@ -5,6 +5,7 @@ use strict;
 use Carp;
 
 use version; $VERSION = qv('0.0.3');
+use Moose;
 
 # Other recommended modules (uncomment to use):
 #  use IO::Prompt;
@@ -15,6 +16,7 @@ use version; $VERSION = qv('0.0.3');
 
 # Module implementation here
 
+has 'uri' => ( isa => 'Str', is => 'rw' );
 
 1; # Magic true value required at end of module
 __END__
