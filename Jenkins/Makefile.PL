@@ -11,6 +11,8 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
         'version'    => 0,
+        'Try::Tiny'  => '0.09',
+        'Moose'      => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Jenkins-*' },
