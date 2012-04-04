@@ -1,7 +1,7 @@
 package Jenkins::WSClient;
 
 use Moose;
-
+use Log::Log4perl qw(:easy) ;
 
 
 sub get {
