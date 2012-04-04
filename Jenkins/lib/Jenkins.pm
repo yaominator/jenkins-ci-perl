@@ -1,7 +1,4 @@
 package Jenkins;
-
-use warnings;
-use strict;
 use Carp;
 
 use version; our $VERSION = qv('0.0.3');
@@ -12,6 +9,7 @@ use Moose;
 has 'uri' => ( isa => 'Str', is => 'rw' ); # Jenkins uri 
 
 
+__PACKAGE__->meta->make_immutable;
 1; # Magic true value required at end of module
 __END__
 
